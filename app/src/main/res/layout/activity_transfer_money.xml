@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F4F7FA">
+
+    <!-- Title Text -->
+    <TextView
+        android:text="Transfer Money"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#1565C0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Sender Username EditText -->
+    <EditText
+        android:id="@+id/senderUsernameEditText"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Sender Username"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <!-- Recipient Username EditText -->
+    <EditText
+        android:id="@+id/recipientUsernameEditText"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Recipient Username"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <!-- Transfer Amount EditText -->
+    <EditText
+        android:id="@+id/transferAmountEditText"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Amount to Transfer"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <!-- Transfer Button -->
+    <Button
+        android:id="@+id/transferButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Transfer Money"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#1565C0"
+        android:layout_marginTop="40dp"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

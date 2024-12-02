@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:backgroundTint="#8ADDE8"
+    tools:context=".AdminLoginActivity">
+
+    <!-- Admin Login Title with Icon -->
+
+    <!-- Admin Options Layout -->
+
+    <TextView
+        android:id="@+id/adminLoginTitle"
+        android:layout_width="395dp"
+        android:layout_height="297dp"
+        android:layout_marginBottom="32dp"
+        android:drawableStart="@drawable/admin_icon"
+        android:drawablePadding="16dp"
+        android:text="Admin Login"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/adminOptionsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <LinearLayout
+        android:id="@+id/adminOptionsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761">
+
+        <!-- Account Details Button -->
+        <Button
+            android:id="@+id/updateAccountDetailsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="8dp"
+            android:text="Account Details"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Manage Transactions Button -->
+        <Button
+            android:id="@+id/manageTransactionsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="8dp"
+            android:text="Manage Transactions"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Bottom Text for Administrator Login -->
+</androidx.constraintlayout.widget.ConstraintLayout>

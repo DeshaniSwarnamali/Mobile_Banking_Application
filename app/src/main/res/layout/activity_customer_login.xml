@@ -1,0 +1,141 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9D0DB"
+    tools:context=".CustomerLoginActivity">
+
+    <TextView
+        android:id="@+id/customerLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:drawablePadding="8dp"
+        android:text="Customer Login"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/customerOptionsGrid"
+        android:layout_width="345dp"
+        android:layout_height="503dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customerLoginTitle">
+
+        <!-- View Account Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/viewAccountDetailsImage"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:contentDescription="View Account Details"
+                android:src="@drawable/ic_account_details" />
+
+            <TextView
+                android:id="@+id/viewAccountDetailsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View BALANCE"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Transfer Money -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/transferMoneyImage"
+                android:layout_width="133dp"
+                android:layout_height="176dp"
+                android:contentDescription="Transfer Money"
+                android:src="@drawable/transfer_money" />
+
+            <TextView
+                android:id="@+id/transferMoneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer Money"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Deposit Money -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/depositMoneyImage"
+                android:layout_width="122dp"
+                android:layout_height="147dp"
+                android:contentDescription="Deposit Money"
+                android:src="@drawable/deposit_money" />
+
+            <TextView
+                android:id="@+id/depositMoneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deposit Money"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Withdraw Money -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/withdrawMoneyImage"
+                android:layout_width="122dp"
+                android:layout_height="147dp"
+                android:contentDescription="Withdraw Money"
+                android:src="@drawable/withdraw_money" />
+
+            <TextView
+                android:id="@+id/withdrawMoneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Withdraw Money"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

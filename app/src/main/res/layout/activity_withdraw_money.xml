@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="36dp"
+    android:background="#FFDEE9"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Withdraw Money"
+        android:textColor="#5C2D73"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Username"
+            android:inputType="text"
+            android:backgroundTint="#FF80AB"
+            android:padding="12dp"
+            android:textColor="#3E2723"
+            android:textColorHint="#9E9E9E"
+            android:importantForAccessibility="yes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp" />
+
+        <EditText
+            android:id="@+id/withdrawAmountEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Withdrawal Amount"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#FF7043"
+            android:padding="12dp"
+            android:textColor="#3E2723"
+            android:textColorHint="#9E9E9E"
+            android:importantForAccessibility="yes" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/withdrawButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Withdraw"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:backgroundTint="#6F1A7E"
+        android:layout_marginTop="20dp"
+        android:importantForAccessibility="yes" />
+</LinearLayout>
